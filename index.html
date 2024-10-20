@@ -37,11 +37,22 @@
             background-color: #0056b3;
         }
     </style>
+    <script>
+        function openTonTransfer() {
+            const tonLink = "ton://transfer/UQAwNFXOcd1COXIvfcib29JJ6dPEx0QNIQtUBdmOoMOjXHYK";
+            window.location.href = tonLink;
+            
+            // Защитный механизм на случай, если ссылка не открывается
+            setTimeout(function() {
+                alert('Похоже, что ваш кошелек не установлен. Убедитесь, что TonKeeper установлен, или загрузите его с официального сайта.');
+            }, 1000); // 1 секунда на проверку, что TonKeeper не открылся
+        }
+    </script>
 </head>
 <body>
     <h1>Поддержите проект</h1>
-    <a href="ton://transfer/UQAwNFXOcd1COXIvfcib29JJ6dPEx0QNIQtUBdmOoMOjXHYK" class="support-button">
+    <button class="support-button" onclick="openTonTransfer()">
         Поддержать
-    </a>
+    </button>
 </body>
 </html>
