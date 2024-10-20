@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #f0f8ff;
+    background-image: url('Tiger.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Цвет заголовка */
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    background-color: #fff; /* Цвет фона формы */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.support-button:hover {
+    background-color: #0056b3;
+}
